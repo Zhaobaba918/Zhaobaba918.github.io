@@ -43,7 +43,7 @@
     
     <title>
         
-            协同过滤推荐系统 | 
+            Leetcode笔记2-链表 | 
         
         Zhaobaba&#39;s blog
     </title>
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Zhaobaba&#39;s blog">
-    <meta name="msapplication-starturl" content="https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/">
+    <meta name="msapplication-starturl" content="https://zhaobaba918.github.io/2022/03/16/Leetcode%E7%AC%94%E8%AE%B02-%E9%93%BE%E8%A1%A8/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Zhaobaba&#39;s blog">
@@ -230,16 +230,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/">
+    <meta property="og:url" content="https://zhaobaba918.github.io/2022/03/16/Leetcode%E7%AC%94%E8%AE%B02-%E9%93%BE%E8%A1%A8/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="协同过滤推荐系统 | Zhaobaba&#39;s blog">
+    <meta property="og:title" content="Leetcode笔记2-链表 | Zhaobaba&#39;s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
     
-        <meta property="article:published_time" content="Sun Mar 06 2022 10:15:57 GMT+0800">
-        <meta property="article:modified_time" content="Sun Mar 06 2022 10:15:57 GMT+0800">
+        <meta property="article:published_time" content="Wed Mar 16 2022 11:45:48 GMT+0800">
+        <meta property="article:modified_time" content="Wed Mar 16 2022 11:48:26 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -247,7 +247,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html" />
+        <link rel="canonical" href="https://zhaobaba918.github.io/2022/03/16/Leetcode%E7%AC%94%E8%AE%B02-%E9%93%BE%E8%A1%A8/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -259,10 +259,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html",
-    "headline": "协同过滤推荐系统",
-    "datePublished": "Sun Mar 06 2022 10:15:57 GMT+0800",
-    "dateModified": "Sun Mar 06 2022 10:15:57 GMT+0800",
+    "mainEntityOfPage": "https://zhaobaba918.github.io/2022/03/16/Leetcode%E7%AC%94%E8%AE%B02-%E9%93%BE%E8%A1%A8/index.html",
+    "headline": "Leetcode笔记2-链表",
+    "datePublished": "Wed Mar 16 2022 11:45:48 GMT+0800",
+    "dateModified": "Wed Mar 16 2022 11:48:26 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Zzy",
@@ -340,6 +340,15 @@
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#19-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9"><span class="post-toc-number">1.</span> <span class="post-toc-text">19 删除链表的倒数第N个节点</span></a></li></ol>
+    </ul>
+    
 
 
 
@@ -369,7 +378,7 @@
         
     
             <p class="article-headline-p">
-                协同过滤推荐系统
+                Leetcode笔记2-链表
             </p>
         </div>
 
@@ -388,7 +397,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Zzy</strong>
-        <span>3月 06, 2022</span>
+        <span>3月 16, 2022</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -410,7 +419,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+CAAAAAAxUyPsAAAE30lEQVR42u3awW7bMBAEUP//T7fXAK3lmV3KTpDHU2HLovhYIKtZPv4Yi/FAgA8fPnwGPnz48Bn48P0Qvkc8vl6f/PY/E4+u+ffKZ8+TzJI//9M74MOHDx8+fGu+F3+qg2uSX822p73DbK5iFfjw4cOHD98hvnaa5Mr8mryIaUuN5EnytePDhw8fPnzv5Lu+5vrR7yBOSqX8W3z48OHDh+/78yVLTV7d22uSoifnxocPHz58+N7Pl09zXXbsS4q8fMkj+z0xPnz48OHDd4pvc0Dtp//7w+f78OHDhw/fL+PbHDubHRfLC4i2JNofR4sE8OHDhw8fvgVf3thuS5l9TJ/fbdYgHzYe8OHDhw8fvqN8syNo19fMjrglv7p+hnwbihYCPnz48OHDt+Bry5RrrNkBsha9DTg2Ax8+fPjw4buDr43Uk/IiB92E7HlJtDkcgA8fPnz48L2Hb1OItK/x+Wa0kUfbwn8xIz58+PDhw7fgawuF2TGyfWNg9oSzrSoKF3z48OHDh28d1s+A2pfwtg2waW/PDts9XSk+fPjw4cO34JstOD8uliw+CSNOxfd5ZFDXffjw4cOHD1/5zntqgjaCb+ODttmQ/3eJtgcfPnz48OFb883C9/e0t/P4/uwz48OHDx8+fHfwJZF3Xna0Te785X8fu+9bCPjw4cOHD9+eL6FsQdtt2LcEZtH/4cgAHz58+PDhGxUu+Z/ztnzJ6WcHzmYFWb1V+PDhw4cP34IvbzO3k7Uly9k2QLtJeZyBDx8+fPjwneLLX61nDezNxrTlRbuWPDjAhw8fPnz49nzFjxcxfVJkXC9701BvQ/wiMsCHDx8+fPhGfKde+Defz6L85DhaG+I/lcGHDx8+fPgO8eU0SRmR3+Fs3J/EDaunwocPHz58+BZ8bTieTJCXLG2YnkcAZ9sP+PDhw4cP3318s6VeRw+biDyP6WeH5/KCCR8+fPjw4dvzzRY5a4Hnv8rDiNmBuVVrAR8+fPjw4VvwtaH8rM2clBSbgqndtlnRhg8fPnz48O35Wpp84rOlTFsw7dsG+PDhw4cP3918m8Xn1+yLjJw+WVF7N3z48OHDh2/Plz/obPp2eW3bYENTt/bx4cOHDx++NV++yKTcyccsQN/EGdefHAjr8eHDhw8fvjVfsoBZmJ4XNNHCyo1JWgL48OHDhw/fWb7ZjdrHmoURs7IjL5WGhRE+fPjw4cO34Mv//Ocv9vnns8Nks+Nxs2ijPmWADx8+fPjwxW3yDUqy+FnrfbjIshGerw4fPnz48OE7xdcG5XlAny8vL5tmkX2+kUWvAx8+fPjw4Rvx5aXALIhPCojN6/0p6PqUAT58+PDhw1eesJo1xZNvZ7H75jBZ+23dRMeHDx8+fPgWfO1oX7CThbWBRR7Et+F+FHbgw4cPHz58C77ZS3j7st2WPnnLPI8GZnPhw4cPHz58d/C1xUoLd6qY2Bw1a8OLpzPiw4cPHz58h/iSW5wimLW98wWfmhEfPnz48OH7LF/+6Pkrff4keWt/X9bUkQE+fPjw4cP3Fr68NZ5ECXlIMYszkhDhxZbgw4cPHz58h/hmYX1L3Ibp+6Z4HkN8oE2ODx8+fPh+JV8bXueP1TbUZ9FAAr1p5OPDhw8fPnyn+Ix24MOHDx8+Ax8+fPgMfPi+8fgLXQyMejTuuj4AAAAASUVORK5CYII=">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAADhElEQVR42u3aQW4jMQwEwPz/07vXBQLH3aQ0MRY1pyCwZal8aJPi1x/PP88XAhw4cODAgQMHDhw4PpjjK35eLvftNa9e//Nrks/9+bNmZ8GBAwcOHDc43kRRcLwo0uJ1EpSEOPosHDhw4MBxjePVJpJgy0M3ie3Z69uz4MCBAweOz+Foy7y2bCsOgwMHDhw4/lOOfLVZoM5KOxw4cODA8bscp8qkfJ2WKS8vH+qV4sCBAweO9UDD5//96HwHDhw4cOD4xtE+CVZbYt0O+DcnwoEDBw4cRzn2V0r7Y+dNwHycotg/Dhw4cOC4xpG32PIBhfaosyul1QUYDhw4cOC4xjE7XhKW+0Ix33P7NePAgQMHjtscmyBMRtPaIm2GVewEBw4cOHAc5cgbbflgQRu6m/Zfslo90IADBw4cOI5y7KMuKpyC8uxsmTcMWhw4cODAMeLIL5P2h8mjdD8wEe0HBw4cOHAc5UhabGeLuv0oXgKXX3rhwIEDB45nOPINJVizpl4+oJCPZeDAgQMHjmc4ZovuBxeSceq2IZj/dMCBAwcOHM9wzMKyjeqixIrRhxdjOHDgwIHjAkc7yrAp8NrtzvawClocOHDgwLHgyC+f8uhtx93yq6nNCPhLJhw4cODAcZlj055rhySS/7ftvyTaceDAgQPHPY4kzNqBuTZiZwf7eeUDo3I4cODAgeMoRx6i7Yjb5topf+/hoMWBAwcOHEdLuH3cJlG6uQxrr8Fw4MCBA8eTHJvYOzUkvS/qioYjDhw4cOC4wLE52KxUa987+xEwDFocOHDgwHGII7kc2hR4bavxVIuwuHbCgQMHDhxHOdom4KzoyldrV0iKPRw4cODAcZtjs/Rsc3mo583B9gvAgQMHDhy3Odoxgll7blaAbV45DFocOHDgwHGUY9N6a4fb3kTgmiNqgOLAgQMHjmscyTBBe/h8c3lBmD/RV4IDBw4cOI5ytE89iLYYYtsMTBQjdDhw4MCB4yhHG1pnW4pt2LcXZtGn4MCBAweOCxxJuCZ87WjCLNpzyugnAg4cOHDguMYxa8/NWPPyLI/b9r04cODAgeNzOGZhvAfdR++VoMWBAwcOHNeC9lS51V4gteGKAwcOHDie4WhLr3y8oL1SypuM+ZDElWsnHDhw4MCxHmi4EXuzwbv2FEXQ4sCBAweOBYcHBw4cOHDgwIEDBw4cH/b8BbyISeJL2rO1AAAAAElFTkSuQmCC">
     
 </ul>
 
@@ -432,7 +441,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=协同过滤推荐系统&url=https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html&pic=https://zhaobaba918.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Leetcode笔记2-链表&url=https://zhaobaba918.github.io/2022/03/16/Leetcode%E7%AC%94%E8%AE%B02-%E9%93%BE%E8%A1%A8/index.html&pic=https://zhaobaba918.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -441,7 +450,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=协同过滤推荐系统&url=https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html&via=Zzy" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Leetcode笔记2-链表&url=https://zhaobaba918.github.io/2022/03/16/Leetcode%E7%AC%94%E8%AE%B02-%E9%93%BE%E8%A1%A8/index.html&via=Zzy" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -450,7 +459,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaobaba918.github.io/2022/03/16/Leetcode%E7%AC%94%E8%AE%B02-%E9%93%BE%E8%A1%A8/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -465,7 +474,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Zhaobaba&#39;s blog&title=协同过滤推荐系统&summary=&pics=https://zhaobaba918.github.io/img/favicon.png&url=https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Zhaobaba&#39;s blog&title=Leetcode笔记2-链表&summary=&pics=https://zhaobaba918.github.io/img/favicon.png&url=https://zhaobaba918.github.io/2022/03/16/Leetcode%E7%AC%94%E8%AE%B02-%E9%93%BE%E8%A1%A8/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -484,7 +493,33 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <h2 id="19-删除链表的倒数第N个节点"><a href="#19-删除链表的倒数第N个节点" class="headerlink" title="19 删除链表的倒数第N个节点"></a>19 删除链表的倒数第N个节点</h2><p><img src="/2022/03/16/Leetcode%E7%AC%94%E8%AE%B02-%E9%93%BE%E8%A1%A8/image-20220316114636092.png" alt="image-20220316114636092"></p>
+<p><strong>注意空指针的处理，头指针的处理，可以看一看自己的错误案例</strong></p>
+<p>delete后要将指针置为nullptr</p>
+<pre><code class="c++">class Solution &#123;
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) &#123;
+        ListNode *front = head,*back = head,*backBack = nullptr;
+        for (int i=0;i&lt;n-1;i++)&#123;
+            front = front-&gt;next;
+        &#125;
+        while (front-&gt;next!=nullptr)&#123;
+            backBack = back;
+            front = front-&gt;next;
+            back = back-&gt;next;
+        &#125;
+        if (backBack != nullptr)&#123;
+            backBack-&gt;next = back-&gt;next;
+        &#125;
+        if (head == back)&#123;
+            head = back-&gt;next;
+        &#125;
+        delete back;
+        return head;
+    &#125;
+&#125;;
+</code></pre>
+
         
     
 
@@ -504,21 +539,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2022/03/11/OS-note/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2022/03/02/%E5%90%B4%E6%81%A9%E8%BE%BE%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0week2/" id="post_nav-older" class="next-content">
+        <a href="/2022/03/11/OS-note/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
