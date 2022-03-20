@@ -43,7 +43,7 @@
     
     <title>
         
-            协同过滤推荐系统 | 
+            Deep Neural Networks for YouTube Recommendations | 
         
         Zhaobaba&#39;s blog
     </title>
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Zhaobaba&#39;s blog">
-    <meta name="msapplication-starturl" content="https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/">
+    <meta name="msapplication-starturl" content="https://zhaobaba918.github.io/2022/03/17/Deep-Neural-Networks-for-YouTube-Recommendations/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Zhaobaba&#39;s blog">
@@ -230,16 +230,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/">
+    <meta property="og:url" content="https://zhaobaba918.github.io/2022/03/17/Deep-Neural-Networks-for-YouTube-Recommendations/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="协同过滤推荐系统 | Zhaobaba&#39;s blog">
+    <meta property="og:title" content="Deep Neural Networks for YouTube Recommendations | Zhaobaba&#39;s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
     
-        <meta property="article:published_time" content="Sun Mar 06 2022 10:15:57 GMT+0800">
-        <meta property="article:modified_time" content="Thu Mar 17 2022 10:55:10 GMT+0800">
+        <meta property="article:published_time" content="Thu Mar 17 2022 10:53:23 GMT+0800">
+        <meta property="article:modified_time" content="Thu Mar 17 2022 15:14:24 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -247,7 +247,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html" />
+        <link rel="canonical" href="https://zhaobaba918.github.io/2022/03/17/Deep-Neural-Networks-for-YouTube-Recommendations/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -259,10 +259,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html",
-    "headline": "协同过滤推荐系统",
-    "datePublished": "Sun Mar 06 2022 10:15:57 GMT+0800",
-    "dateModified": "Thu Mar 17 2022 10:55:10 GMT+0800",
+    "mainEntityOfPage": "https://zhaobaba918.github.io/2022/03/17/Deep-Neural-Networks-for-YouTube-Recommendations/index.html",
+    "headline": "Deep Neural Networks for YouTube Recommendations",
+    "datePublished": "Thu Mar 17 2022 10:53:23 GMT+0800",
+    "dateModified": "Thu Mar 17 2022 15:14:24 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Zzy",
@@ -340,6 +340,15 @@
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Youtube-Dnn-%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F"><span class="post-toc-number">1.</span> <span class="post-toc-text">Youtube Dnn 推荐系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%A7%88"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">系统概览</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Candidatiate-Generation"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Candidatiate Generation</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%A4%9A%E7%A7%8D%E4%BF%A1%E5%8F%B7"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">多种信号</span></a></li></ol></li></ol>
+    </ul>
+    
 
 
 
@@ -369,7 +378,7 @@
         
     
             <p class="article-headline-p">
-                协同过滤推荐系统
+                Deep Neural Networks for YouTube Recommendations
             </p>
         </div>
 
@@ -388,7 +397,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Zzy</strong>
-        <span>3月 06, 2022</span>
+        <span>3月 17, 2022</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -410,7 +419,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+CAAAAAAxUyPsAAAE30lEQVR42u3awW7bMBAEUP//T7fXAK3lmV3KTpDHU2HLovhYIKtZPv4Yi/FAgA8fPnwGPnz48Bn48P0Qvkc8vl6f/PY/E4+u+ffKZ8+TzJI//9M74MOHDx8+fGu+F3+qg2uSX822p73DbK5iFfjw4cOHD98hvnaa5Mr8mryIaUuN5EnytePDhw8fPnzv5Lu+5vrR7yBOSqX8W3z48OHDh+/78yVLTV7d22uSoifnxocPHz58+N7Pl09zXXbsS4q8fMkj+z0xPnz48OHDd4pvc0Dtp//7w+f78OHDhw/fL+PbHDubHRfLC4i2JNofR4sE8OHDhw8fvgVf3thuS5l9TJ/fbdYgHzYe8OHDhw8fvqN8syNo19fMjrglv7p+hnwbihYCPnz48OHDt+Bry5RrrNkBsha9DTg2Ax8+fPjw4buDr43Uk/IiB92E7HlJtDkcgA8fPnz48L2Hb1OItK/x+Wa0kUfbwn8xIz58+PDhw7fgawuF2TGyfWNg9oSzrSoKF3z48OHDh28d1s+A2pfwtg2waW/PDts9XSk+fPjw4cO34JstOD8uliw+CSNOxfd5ZFDXffjw4cOHD1/5zntqgjaCb+ODttmQ/3eJtgcfPnz48OFb883C9/e0t/P4/uwz48OHDx8+fHfwJZF3Xna0Te785X8fu+9bCPjw4cOHD9+eL6FsQdtt2LcEZtH/4cgAHz58+PDhGxUu+Z/ztnzJ6WcHzmYFWb1V+PDhw4cP34IvbzO3k7Uly9k2QLtJeZyBDx8+fPjwneLLX61nDezNxrTlRbuWPDjAhw8fPnz49nzFjxcxfVJkXC9701BvQ/wiMsCHDx8+fPhGfKde+Defz6L85DhaG+I/lcGHDx8+fPgO8eU0SRmR3+Fs3J/EDaunwocPHz58+BZ8bTieTJCXLG2YnkcAZ9sP+PDhw4cP3318s6VeRw+biDyP6WeH5/KCCR8+fPjw4dvzzRY5a4Hnv8rDiNmBuVVrAR8+fPjw4VvwtaH8rM2clBSbgqndtlnRhg8fPnz48O35Wpp84rOlTFsw7dsG+PDhw4cP3918m8Xn1+yLjJw+WVF7N3z48OHDh2/Plz/obPp2eW3bYENTt/bx4cOHDx++NV++yKTcyccsQN/EGdefHAjr8eHDhw8fvjVfsoBZmJ4XNNHCyo1JWgL48OHDhw/fWb7ZjdrHmoURs7IjL5WGhRE+fPjw4cO34Mv//Ocv9vnns8Nks+Nxs2ijPmWADx8+fPjwxW3yDUqy+FnrfbjIshGerw4fPnz48OE7xdcG5XlAny8vL5tmkX2+kUWvAx8+fPjw4Rvx5aXALIhPCojN6/0p6PqUAT58+PDhw1eesJo1xZNvZ7H75jBZ+23dRMeHDx8+fPgWfO1oX7CThbWBRR7Et+F+FHbgw4cPHz58C77ZS3j7st2WPnnLPI8GZnPhw4cPHz58d/C1xUoLd6qY2Bw1a8OLpzPiw4cPHz58h/iSW5wimLW98wWfmhEfPnz48OH7LF/+6Pkrff4keWt/X9bUkQE+fPjw4cP3Fr68NZ5ECXlIMYszkhDhxZbgw4cPHz58h/hmYX1L3Ibp+6Z4HkN8oE2ODx8+fPh+JV8bXueP1TbUZ9FAAr1p5OPDhw8fPnyn+Ix24MOHDx8+Ax8+fPgMfPi+8fgLXQyMejTuuj4AAAAASUVORK5CYII=">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAADj0lEQVR42u3aS27jQAwFQN//0pntABnJj5+2NUBpFTiOrC4vGJLv9eP663ohwIEDBw4cOHDgwIHjwRyv+Pr9/n/c+uKv8t9ePvTFM9y/fn8WHDhw4MBxjuNNKQo+8uqd+VFzjt334MCBAweOcxzJIZOPr75+/yS958zPggMHDhw4vssxb7167VmvzOPAgQMHjudzJK1acph5Y4YDBw4cOJ7PURioDQaCSamuluSvzUpx4MCBA8cFRzXQ8OSfv5DvwIEDBw4cg2teSqtRueoyrHwiHDhw4MCxypE0RckBeuHsaiGfrMTKIWwcOHDgwLHEcX/rfCmVr4sm9JPXceDAgQPHCY77Vi2PJmw1dQnlVtOIAwcOHDhOcCQtUy+IUC14yTIsjzgUvkIcOHDgwLHKUX30XkhuHqTOmfISiwMHDhw4TnAkf5CUw2oprZbYHCIp4Thw4MCB45MceXmbrIhymkmJbXa0OHDgwIFjlSNf8OSt12TwN2kvm1E5HDhw4MCxxFGNnc0bvN54sRd9wIEDBw4cn+TIgU4M8qqfmJf/qFHEgQMHDhyrHFuDwnJ5i4eGzQBc/g8BDhw4cOD4OEe1lZosmZJh3yQq96aFw4EDBw4cY4588ZM0ftVQwu5YsPf14MCBAweOXY5qQ5UUy+rYMR/qTQaO0doJBw4cOHCscuQDvnxoOD9AteQnXxUOHDhw4DjHkQzjemPEvEzuHruKggMHDhw4djm2GrPyQ7SavR7Km8AEDhw4cOBY5ZiEEqoNWwKR3D8v9qNAAw4cOHDgGHMkjzWH6IUSqs1eYbyIAwcOHDhWOeYDuHzMtxW563GUO1ocOHDgwNHimKyXqiO/nCy/T4Ky9n8HDhw4cOBohbDzVVCvTOat4ImlFw4cOHDgOM2xNRbsPWI1Nlf9kqLRJw4cOHDgWOXYKreTxqy3rMobyDf3x4EDBw4cBziqYYXeUSfHTj69GbPAgQMHDhwHOHrxhfKCZ1CYJ+W5vHbCgQMHDhxLgYZ5YSsse+JVUzUMkUcrcODAgQPHOY5eICBZ6syLdDXikJ8LBw4cOHCc5sjLXtI+5ZTVYd98pIgDBw4cOJ7DUW3e7u+81aT1ong4cODAgeP/4pj/NmkI86FkYe2EAwcOHDiWOPKhXv6I1RZusrjKnwQHDhw4cJzm6AUaJkugyVBv0tThwIEDB47THC4cOHDgwIEDBw4cOHA87PoDZmHJKrqVvJYAAAAASUVORK5CYII=">
     
 </ul>
 
@@ -432,7 +441,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=协同过滤推荐系统&url=https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html&pic=https://zhaobaba918.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Deep Neural Networks for YouTube Recommendations&url=https://zhaobaba918.github.io/2022/03/17/Deep-Neural-Networks-for-YouTube-Recommendations/index.html&pic=https://zhaobaba918.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -441,7 +450,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=协同过滤推荐系统&url=https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html&via=Zzy" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Deep Neural Networks for YouTube Recommendations&url=https://zhaobaba918.github.io/2022/03/17/Deep-Neural-Networks-for-YouTube-Recommendations/index.html&via=Zzy" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -450,7 +459,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaobaba918.github.io/2022/03/17/Deep-Neural-Networks-for-YouTube-Recommendations/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -465,7 +474,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Zhaobaba&#39;s blog&title=协同过滤推荐系统&summary=&pics=https://zhaobaba918.github.io/img/favicon.png&url=https://zhaobaba918.github.io/2022/03/06/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Zhaobaba&#39;s blog&title=Deep Neural Networks for YouTube Recommendations&summary=&pics=https://zhaobaba918.github.io/img/favicon.png&url=https://zhaobaba918.github.io/2022/03/17/Deep-Neural-Networks-for-YouTube-Recommendations/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -484,7 +493,17 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <h1 id="Youtube-Dnn-推荐系统"><a href="#Youtube-Dnn-推荐系统" class="headerlink" title="Youtube Dnn 推荐系统"></a>Youtube Dnn 推荐系统</h1><h2 id="系统概览"><a href="#系统概览" class="headerlink" title="系统概览"></a>系统概览</h2><p><img src="/2022/03/17/Deep-Neural-Networks-for-YouTube-Recommendations/image-20220317105640132.png" alt="image-20220317105640132"></p>
+<p>系统由两个DNN组成，一个是候选产生网络candidate generation 一个是排名DNN ranking</p>
+<p>候选网络从数据库选出几百个视频，通过协同过滤，比较泛。通过观看过的视频、搜索关键词、人口特征衡量用户相似度</p>
+<p>打分网络给每个候选视频打分排序</p>
+<h2 id="Candidatiate-Generation"><a href="#Candidatiate-Generation" class="headerlink" title="Candidatiate Generation"></a>Candidatiate Generation</h2><p>推荐问题转化为分类问题？？？<br>$$<br>P\left(w_{t}&#x3D;i \mid U, C\right)&#x3D;\frac{e^{v_{i} u}}{\sum_{j \in V} e^{v_{j} u}}<br>$$<br>$ w_{t} $ 表示用户在t时刻会看的视频（这个可以抽象成类别）</p>
+<p>V 表示所有视频</p>
+<p>U 表示一个用户，C表示上下文</p>
+<p>$ u \in \mathbb{R}^{N} $ 表示用户的embedding向量， $ v_{j} \in \mathbb{R}^{N} $ 表示每个候选视频的embedding向量</p>
+<p> 神经网络的作用是学习用户embedding u，这是一个用户历史记录和上下文的函数</p>
+<h2 id="多种信号"><a href="#多种信号" class="headerlink" title="多种信号"></a>多种信号</h2><p>神经网络代替矩阵分解的重要优势是可以轻易地加入任何连续的或分类的特征</p>
+
         
     
 
@@ -504,7 +523,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2022/03/11/OS-note/" id="post_nav-newer" class="prev-content">
+        <a href="/2022/03/19/Python%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -518,7 +537,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2022/03/02/%E5%90%B4%E6%81%A9%E8%BE%BE%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0week2/" id="post_nav-older" class="next-content">
+        <a href="/2022/03/16/%E5%A0%86%E5%8C%BA%E3%80%81%E6%A0%88%E5%8C%BA/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
