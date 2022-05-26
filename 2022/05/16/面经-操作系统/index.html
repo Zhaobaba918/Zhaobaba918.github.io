@@ -239,7 +239,7 @@
 
     
         <meta property="article:published_time" content="Mon May 16 2022 19:22:06 GMT+0800">
-        <meta property="article:modified_time" content="Sat May 21 2022 00:03:18 GMT+0800">
+        <meta property="article:modified_time" content="Thu May 26 2022 01:30:24 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -262,7 +262,7 @@
     "mainEntityOfPage": "https://zhaobaba918.github.io/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/index.html",
     "headline": "面经 操作系统",
     "datePublished": "Mon May 16 2022 19:22:06 GMT+0800",
-    "dateModified": "Sat May 21 2022 00:03:18 GMT+0800",
+    "dateModified": "Thu May 26 2022 01:30:24 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Zzy",
@@ -346,7 +346,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="post-toc-number">1.</span> <span class="post-toc-text">操作系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">进程通信</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%BF%A1%E5%8F%B7-signal"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">信号 signal</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%AE%A1%E9%81%93"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">管道</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="post-toc-number">1.</span> <span class="post-toc-text">操作系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1-interprocess-communication-IPC"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">进程通信 interprocess communication IPC</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%BF%A1%E5%8F%B7-signal"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">信号 signal</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%AE%A1%E9%81%93"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">管道</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%85%B1%E4%BA%AB%E5%86%85%E5%AD%98%E7%B3%BB%E7%BB%9F"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">共享内存系统</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">程序执行过程</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%8E%8B%E9%81%93"><span class="post-toc-number">2.</span> <span class="post-toc-text">王道</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%AD%E6%96%AD%E3%80%81%E5%BC%82%E5%B8%B8%E3%80%81%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">中断、异常、系统调用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E8%BF%87%E7%A8%8B"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">系统启动过程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">进程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81"><span class="post-toc-number">2.3.1.</span> <span class="post-toc-text">进程状态</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1"><span class="post-toc-number">2.3.2.</span> <span class="post-toc-text">进程通信</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6"><span class="post-toc-number">2.3.3.</span> <span class="post-toc-text">处理机调度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6"><span class="post-toc-number">2.3.4.</span> <span class="post-toc-text">进程调度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95"><span class="post-toc-number">2.3.5.</span> <span class="post-toc-text">调度算法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="post-toc-number">2.3.6.</span> <span class="post-toc-text">进程同步</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%AE%9E%E7%8E%B0%E4%B8%B4%E7%95%8C%E5%8C%BA%E4%BA%92%E6%96%A5%E7%9A%84%E6%96%B9%E6%B3%95"><span class="post-toc-number">2.3.7.</span> <span class="post-toc-text">实现临界区互斥的方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E6%96%B9%E6%B3%95"><span class="post-toc-number">2.3.7.1.</span> <span class="post-toc-text">软件方法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%A1%AC%E4%BB%B6%E5%AE%9E%E7%8E%B0"><span class="post-toc-number">2.3.7.2.</span> <span class="post-toc-text">硬件实现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E4%BF%A1%E5%8F%B7%E9%87%8F"><span class="post-toc-number">2.3.7.3.</span> <span class="post-toc-text">信号量</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%AD%BB%E9%94%81"><span class="post-toc-number">2.3.8.</span> <span class="post-toc-text">死锁</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E6%AD%BB%E9%94%81%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95"><span class="post-toc-number">2.3.8.1.</span> <span class="post-toc-text">死锁处理方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E9%A2%84%E9%98%B2"><span class="post-toc-number">2.3.8.1.1.</span> <span class="post-toc-text">预防</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E9%81%BF%E5%85%8D"><span class="post-toc-number">2.3.8.1.2.</span> <span class="post-toc-text">避免</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B%E5%92%8C%E6%81%A2%E5%A4%8D"><span class="post-toc-number">2.3.8.1.3.</span> <span class="post-toc-text">死锁检测和恢复</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E7%94%B1%E5%BA%94%E7%94%A8%E8%BF%9B%E7%A8%8B%E5%A4%84%E7%90%86%E6%AD%BB%E9%94%81"><span class="post-toc-number">2.3.8.1.4.</span> <span class="post-toc-text">由应用进程处理死锁</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -493,7 +493,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><h2 id="进程通信"><a href="#进程通信" class="headerlink" title="进程通信"></a>进程通信</h2><h3 id="信号-signal"><a href="#信号-signal" class="headerlink" title="信号 signal"></a>信号 signal</h3><p>signal可以理解为软件中断，打算现在进行应用程序，解决更紧急的事情</p>
+        <h1 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><h2 id="进程通信-interprocess-communication-IPC"><a href="#进程通信-interprocess-communication-IPC" class="headerlink" title="进程通信 interprocess communication IPC"></a>进程通信 interprocess communication IPC</h2><h3 id="信号-signal"><a href="#信号-signal" class="headerlink" title="信号 signal"></a>信号 signal</h3><p>signal可以理解为软件中断，打算现在进行应用程序，解决更紧急的事情</p>
 <p>操作系统给某个程序发signal</p>
 <h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p>用于把小程序组合起来</p>
 <p>一个程序的输出重定向为另一个程序的输入</p>
@@ -504,6 +504,118 @@
 <p>ls more 共享父进程的文件资源buffer</p>
 <p>buffer满或者空会阻塞对应的进程</p>
 <p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220521000318367.png" alt="image-20220521000318367"></p>
+<p><strong>进程间通信有两种基本模式：</strong></p>
+<p>消息传递与共享内存（间接通信&#x2F;直接通信）</p>
+<p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220521212722360.png" alt="image-20220521212722360"></p>
+<p>消息传递对于交换交少量的数据很有用，因为不需要避免冲突，更容易实现</p>
+<p>共享内存允许以最快的速度进行方便的通信</p>
+<h2 id="共享内存系统"><a href="#共享内存系统" class="headerlink" title="共享内存系统"></a>共享内存系统</h2><h2 id="程序执行过程"><a href="#程序执行过程" class="headerlink" title="程序执行过程"></a>程序执行过程</h2><ol>
+<li><p>程序员通过编辑器创建源程序（文本文件），ASCII形式保存</p>
+</li>
+<li><p>计算机只能执行机器语言，需要编译器把高级语言转换为机器语言，然后把机器语言的集合打包成一个可执行程序，以二进制磁盘文件的形式保存</p>
+<p>编译的过程分为四个阶段 预处理 编译 汇编 链接</p>
+<p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220522145332046-16532024156121.png" alt="image-20220522145332046"></p>
+<ul>
+<li>预处理：根据#开头的命令修改源代码，比如.h直接插入源代码中</li>
+<li>编译：编译器将文本文件hello.i编译成汇编语言文本文件hello.s，汇编语言是非常有用的，因为他为不同的高级语言编译器提供了通用的输出语言</li>
+<li>汇编：汇编器将hello.s翻译成机器指令，并打包成可重定位目标程序，将结果保存在目标文件hello.o中，hello.o是二进制文件（汇编语言和机器码等价的，汇编语言是中间语言，可能是为了做优化用）</li>
+<li>链接：hello程序调用了printf函数，是每个C编译器都提供的标准库中的函数，printf函数存在于一个名为printf.o的单独预编译文件中，链接器将printf.o合并到hello.o中，得到hello文件，这是一个可执行文件，可以被加载到内存中由系统执行</li>
+</ul>
+</li>
+</ol>
+<h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><p><strong>系统调用：</strong></p>
+<p>系统调用system call提供操作系统服务接口，Linux系统调用举例 fork kill mkdir</p>
+<p><strong>操作系统运行机制：</strong></p>
+<p>内核程序运行在内核态，可以执行内核指令；用户程序运行在用户态，出于安全考虑不能执行特权指令</p>
+<h2 id="中断、异常、系统调用"><a href="#中断、异常、系统调用" class="headerlink" title="中断、异常、系统调用"></a>中断、异常、系统调用</h2><p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220524235701676.png" alt="image-20220524235701676"></p>
+<p>操作系统内核和外部打交道通过中断异常系统调用三种方法</p>
+<p>中断：硬件设备对操作系统提出的处理请求</p>
+<p>异常：非法指令或其他原因导致当前指令执行失败</p>
+<p>系统调用：应用程序主动向操作系统发出服务请求</p>
+<p>（以上操作系统指的都是内核态）</p>
+<p>广义的中断也可以理解为以上三种方法的总称，硬中断指外设中断，软中断指系统调用和异常</p>
+<p>系统调用量很大，占用一个中断编号，再取系统调用表中选择系统调用实现</p>
+<p>标准库会封装函数调用</p>
+<p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220525001231601.png" alt="image-20220525001231601"></p>
+<p>我们在写程序的时候通常不直接使用系统调用，而是把系统调用封装到一个库中，比如C++标准库，应用程序访问库函数间接使用系统调用</p>
+<p>其他库：</p>
+<p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220525001945162.png" alt="image-20220525001945162"></p>
+<p>系统调用时需要切换堆栈，内核态和用户态用不同的堆栈，为了安全</p>
+<p>例：时钟中断，表示一个固定的时间片已到，让处理机处理计时、启动定时任务等</p>
+<h2 id="系统启动过程"><a href="#系统启动过程" class="headerlink" title="系统启动过程"></a>系统启动过程</h2><p>内存分为：RAM随机访问存储和ROM只读存储</p>
+<p>ROM加电之后还会有以前写的内容，系统的初始化代码从这里开始</p>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><p>进程由程序端，相关数据段和PCB组成，进程是程序的一次执行</p>
+<h3 id="进程状态"><a href="#进程状态" class="headerlink" title="进程状态"></a>进程状态</h3><p>创建态，就绪态，运行态，阻塞态，结束态</p>
+<h3 id="进程通信"><a href="#进程通信" class="headerlink" title="进程通信"></a>进程通信</h3><ol>
+<li>共享存储</li>
+<li>消息传递</li>
+<li>管道通信：半双工的，同一时刻只能单向传递，可以看成是共享存储的优化，因为可以同时读写，不会因为互斥而被阻塞。管道存在于内存中</li>
+</ol>
+<p>进程间通信IPC需要进程同步和互斥手段6.-+&#x2F;96辅助，以保证数据的一致性，而线程间可以直接读写进程数据段（如全局变量）来进行通信？？？</p>
+<p>用户级线程和内核级线程？？？</p>
+<h3 id="处理机调度"><a href="#处理机调度" class="headerlink" title="处理机调度"></a>处理机调度</h3><p>作业调度：将作业从外存加载到内存，创建进程</p>
+<p>中级调度：又称内存调度，提高内存利用率和吞吐量，把暂时不能运行的内存调到外存，进程进入挂起态</p>
+<p>进程调度</p>
+<h3 id="进程调度"><a href="#进程调度" class="headerlink" title="进程调度"></a>进程调度</h3><ol>
+<li>抢占式</li>
+<li>非抢占式</li>
+</ol>
+<h3 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h3><p>有的调度算法适用于作业调度，有的适用于进程调度，有的都适用</p>
+<ol>
+<li>先来先服务FCFS：可用于作业调度，进程调度，非抢占式</li>
+<li>短作业有限SJF：非抢占式，平均等待时间平均周转时间最短</li>
+<li>优先级调度：作业调度或进程调度，抢占或非抢占</li>
+<li>高响应比优先：非抢占，FCFS和SJF的综合，响应比&#x3D;(等待时间+要求服务时间)&#x2F;要求服务时间</li>
+<li>时间片轮转算法：</li>
+<li>多级反馈队列：抢占式，时间片轮转和优先级调度的综合</li>
+</ol>
+<h3 id="进程同步"><a href="#进程同步" class="headerlink" title="进程同步"></a>进程同步</h3><p><strong>临界资源</strong>：一次只允许一个进程访问的资源</p>
+<p><strong>同步：</strong>同步又称直接制约关系，是指完成某种任务而建立的两个或多个进程，需要有先后执行的关系，制约关系源于进程间的合作</p>
+<p><strong>互斥：</strong>互斥又称间接制约关系，访问临界资源而产生的制约</p>
+<p>为了禁止连个进程同时进入临界区，同步机制应遵循以下准则：</p>
+<ol>
+<li>空闲让进</li>
+<li>忙则等待</li>
+<li>有限等待</li>
+<li>让权等待（可选）</li>
+</ol>
+<h3 id="实现临界区互斥的方法"><a href="#实现临界区互斥的方法" class="headerlink" title="实现临界区互斥的方法"></a>实现临界区互斥的方法</h3><h4 id="软件方法"><a href="#软件方法" class="headerlink" title="软件方法"></a>软件方法</h4><p>依赖条件少，但是实现复杂</p>
+<ol>
+<li>单标志法 （turn&#x3D;0 turn&#x3D;1只能两个进程，不满足有空让进）</li>
+<li>双标志先检查法 （可能同时进入临界区）</li>
+<li>双标志后检查法 （可能谁也进不了，饥饿现象）</li>
+<li>Peterson算法 （双标志+turn）</li>
+</ol>
+<p>软件方法只能实现两个进程互斥，并且设计复杂，只能通过模拟来理解</p>
+<h4 id="硬件实现"><a href="#硬件实现" class="headerlink" title="硬件实现"></a>硬件实现</h4><p>利用特殊的指令，如对一个字中的内容检测和修正，对两个字的内容交换</p>
+<ol>
+<li><p>关中断：CPU只在发生中断时引起进程切换（适用单处理机）</p>
+</li>
+<li><p>硬件指令：TestAndSet</p>
+<p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220525231629996.png" alt="image-20220525231629996"></p>
+<p>Swap</p>
+<p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220525231736278.png" alt="image-20220525231736278"></p>
+<p>通过这两个原子操作可以实现锁，可以是忙等待或非忙等待</p>
+<p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220526004954554.png" alt="image-20220526004954554"></p>
+</li>
+</ol>
+<p>硬件方法优点：适用于任意数目的进程，容易验证正确性</p>
+<p>缺点：不能实现让权等待；每次随机选一个进程进入临界区，有的进程可能一直进不去造成饥饿</p>
+<h4 id="信号量"><a href="#信号量" class="headerlink" title="信号量"></a>信号量</h4><p><img src="/2022/05/16/%E9%9D%A2%E7%BB%8F-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-20220526010246113.png" alt="image-20220526010246113"></p>
+<p>用的最多</p>
+<p>信号量和管程都属于软件进程互斥的软件实现方法</p>
+<p>信号量只能被两个标准的原语P V访问，原语具有原子性，通常硬件实现</p>
+<h3 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h3><p>死锁出现的必要条件：</p>
+<ol>
+<li>互斥</li>
+<li>持有并等待</li>
+<li>非抢占</li>
+<li>循环等待</li>
+</ol>
+<h4 id="死锁处理方法"><a href="#死锁处理方法" class="headerlink" title="死锁处理方法"></a>死锁处理方法</h4><h5 id="预防"><a href="#预防" class="headerlink" title="预防"></a>预防</h5><p>确保系统不会陷入死锁，使系统任何时刻不满足死锁的必要条件</p>
+<p>针对四个条件来说</p>
+<h5 id="避免"><a href="#避免" class="headerlink" title="避免"></a>避免</h5><p>使用前进行判断，只允许不会出现死锁的进程请求资源</p>
+<h5 id="死锁检测和恢复"><a href="#死锁检测和恢复" class="headerlink" title="死锁检测和恢复"></a>死锁检测和恢复</h5><h5 id="由应用进程处理死锁"><a href="#由应用进程处理死锁" class="headerlink" title="由应用进程处理死锁"></a>由应用进程处理死锁</h5><p>通常操作系统忽略死锁，这是大多数操作系统的做法</p>
 
         
     
@@ -630,7 +742,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2022/05/">五月 2022<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/04/">四月 2022<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">14</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/02/">二月 2022<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/archives/2022/05/">五月 2022<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/04/">四月 2022<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">14</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/02/">二月 2022<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
@@ -648,7 +760,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/C/">C++<span class="sidebar_archives-count">11</span></a></li><li><a class="sidebar_archives-link" href="/categories/Computer-Network/">Computer Network<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Leetcode/">Leetcode<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/OS/">OS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Recommender/">Recommender<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">卷积神经网络<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">网络编程<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%9D%A2%E7%BB%8F/">面经<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/C/">C++<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/categories/Computer-Network/">Computer Network<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Leetcode/">Leetcode<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/OS/">OS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Recommender/">Recommender<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">卷积神经网络<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">网络编程<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%9D%A2%E7%BB%8F/">面经<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
@@ -662,7 +774,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">36</span>
+                <span class="sidebar-badge">38</span>
             </a>
         </li>
         
