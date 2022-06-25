@@ -239,7 +239,7 @@
 
     
         <meta property="article:published_time" content="Thu May 26 2022 21:00:00 GMT+0800">
-        <meta property="article:modified_time" content="Thu May 26 2022 23:37:35 GMT+0800">
+        <meta property="article:modified_time" content="Sat Jun 18 2022 15:15:04 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -262,7 +262,7 @@
     "mainEntityOfPage": "https://zhaobaba918.github.io/2022/05/26/%E9%9D%A2%E7%BB%8F-%E6%95%B0%E6%8D%AE%E5%BA%93/index.html",
     "headline": "面经 数据库",
     "datePublished": "Thu May 26 2022 21:00:00 GMT+0800",
-    "dateModified": "Thu May 26 2022 23:37:35 GMT+0800",
+    "dateModified": "Sat Jun 18 2022 15:15:04 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Zzy",
@@ -523,11 +523,26 @@
 <p>对主码范围查找和从根查找效率都高</p>
 <h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><p>事务的四大特征ACID</p>
 <ol>
-<li>原子性atomicity</li>
-<li>一致性consistency：执行事务前后，数据保持一致，多个事务对同一个数据读取结果是相同的（数据总是对的），执行前后完整性约束没有被破坏</li>
-<li>隔离性isolation：并发访问数据库时，一个用户的事务不被其他并发执行的事务干扰</li>
-<li>持久性durability</li>
+<li><p>原子性atomicity：</p>
+<p>保证原子性的基本思路如下：事务要执行写操作，不立即执行，在数据库磁盘删记录旧值。改动记录到日志文件中，如果没完成事务执行就从日志中恢复旧值。这项工作由恢复系统完成。</p>
+</li>
+<li><p>一致性consistency：执行事务前后，数据保持一致，多个事务对同一个数据读取结果是相同的（数据总是对的），执行前后完整性约束没有被破坏。这种一致性超过完整性约束，如何实现是程序员的职责。</p>
+</li>
+<li><p>隔离性isolation：并发访问数据库时，一个用户的事务不被其他并发执行的事务干扰。并发控制系统保证隔离性。</p>
+</li>
+<li><p>持久性durability：系统崩溃后事务操作是持久的。</p>
+<p>可以通过确保一下两条中的任何一条来达到持久性：</p>
+<ol>
+<li><p>事务做的更新在事务结束前已经写入到磁盘中</p>
+</li>
+<li><p>事务的一致性的更新信息写到磁盘上了，能让数据库在系统故障重启后重新构造更新</p>
+</li>
 </ol>
+</li>
+</ol>
+<p><strong>隔离性：</strong></p>
+<p>如果并发执行的控制完全由操作系统负责，许多调度都是可能的，可能让数据库处于不一致状态。保证执行的任何调度都能使数据库处于一致状态是数据库的任务，数据库的并发控制部件负责。</p>
+<p>有并发和没并发执行效果一样，这样的调度成为可串行化调度。</p>
 
         
     
@@ -672,7 +687,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/C/">C++<span class="sidebar_archives-count">15</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Leetcode/">Leetcode<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/OS/">OS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Recommender/">Recommender<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">卷积神经网络<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">网络编程<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%9D%A2%E7%BB%8F/">面经<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E5%8E%86/">面试经历<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/C/">C++<span class="sidebar_archives-count">15</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Leetcode/">Leetcode<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/OS/">OS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Recommender/">Recommender<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">卷积神经网络<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">网络编程<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%9D%A2%E7%BB%8F/">面经<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E5%8E%86/">面试经历<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
