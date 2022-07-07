@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            软件工程 | 
+        
+        Zhaobaba&#39;s blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/bg2.png);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Zhaobaba&#39;s blog">
+    <meta name="msapplication-starturl" content="https://zhaobaba918.github.io/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Zhaobaba&#39;s blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://zhaobaba918.github.io/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="软件工程 | Zhaobaba&#39;s blog">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Sun Jul 03 2022 11:41:55 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jul 04 2022 23:37:40 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://zhaobaba918.github.io/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://zhaobaba918.github.io/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/index.html",
+    "headline": "软件工程",
+    "datePublished": "Sun Jul 03 2022 11:41:55 GMT+0800",
+    "dateModified": "Mon Jul 04 2022 23:37:40 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Zzy",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "短道速滑，汽车，coding"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zhaobaba&#39;s blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E9%9C%80%E6%B1%82%E5%9F%BA%E7%A1%80"><span class="post-toc-number">1.</span> <span class="post-toc-text">需求基础</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95"><span class="post-toc-number">2.</span> <span class="post-toc-text">需求分析方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%94%A8%E4%BE%8B%E5%9B%BE"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">用例图</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%A6%82%E5%BF%B5%E7%B1%BB%E5%9B%BE"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">概念类图</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%A1%BA%E5%BA%8F%E5%9B%BE"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">顺序图</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%8A%B6%E6%80%81%E5%9B%BE"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">状态图</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E2%80%94%E2%80%94%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3%E5%8C%96%E4%B8%8E%E9%AA%8C%E8%AF%81"><span class="post-toc-number">3.</span> <span class="post-toc-text">需求分析方法——需求文档化与验证</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%AF%84%E5%AE%A1%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">评审软件需求规格说明文档</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BB%A5%E9%9C%80%E6%B1%82%E4%B8%BA%E5%9F%BA%E7%A1%80%E5%BC%80%E5%8F%91%E7%B3%BB%E7%BB%9F%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">以需求为基础开发系统测试用例</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%BA%A6%E9%87%8F%E9%9C%80%E6%B1%82"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">度量需求</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80"><span class="post-toc-number">4.</span> <span class="post-toc-text">软件设计基础</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80"><span class="post-toc-number">5.</span> <span class="post-toc-text">软件体系结构基础</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">体系结构风格</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E6%9E%84%E5%BB%BA"><span class="post-toc-number">6.</span> <span class="post-toc-text">软件体系结构设计与构建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%80%89%E6%8B%A9%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">选择体系结构风格</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">软件体系结构逻辑设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%AE%9E%E7%8E%B0"><span class="post-toc-number">6.3.</span> <span class="post-toc-text">软件体系结构实现</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%AE%8C%E5%96%84%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="post-toc-number">6.4.</span> <span class="post-toc-text">完善软件体系结构设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%9E%84%E5%BB%BA%E6%8E%A5%E5%8F%A3"><span class="post-toc-number">6.5.</span> <span class="post-toc-text">添加构建接口</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E6%9E%84%E5%BB%BA"><span class="post-toc-number">6.6.</span> <span class="post-toc-text">体系结构构建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%9B%86%E6%88%90%E4%B8%8E%E6%B5%8B%E8%AF%95"><span class="post-toc-number">6.7.</span> <span class="post-toc-text">体系结构集成与测试</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E7%9A%84%E6%96%87%E6%A1%A3%E5%8C%96"><span class="post-toc-number">6.8.</span> <span class="post-toc-text">体系结构设计的文档化</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AF%84%E5%AE%A1"><span class="post-toc-number">6.9.</span> <span class="post-toc-text">体系结构评审</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1"><span class="post-toc-number">7.</span> <span class="post-toc-text">人机交互设计</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1"><span class="post-toc-number">8.</span> <span class="post-toc-text">详细设计</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1"><span class="post-toc-number">8.1.</span> <span class="post-toc-text">面向对象设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E8%BF%87%E7%A8%8B"><span class="post-toc-number">8.2.</span> <span class="post-toc-text">面向对象设计过程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%BA%E7%B1%BB%E9%97%B4%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="post-toc-number">8.3.</span> <span class="post-toc-text">为类间协作开发集成测试用例</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3%E6%8F%8F%E8%BF%B0"><span class="post-toc-number">8.4.</span> <span class="post-toc-text">详细设计文档描述</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1%E7%9A%84%E8%AF%84%E5%AE%A1"><span class="post-toc-number">8.5.</span> <span class="post-toc-text">详细设计的评审</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E6%9E%84%E9%80%A0"><span class="post-toc-number">9.</span> <span class="post-toc-text">软件构造</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95"><span class="post-toc-number">10.</span> <span class="post-toc-text">软件测试</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%B4%BB%E5%8A%A8"><span class="post-toc-number">10.1.</span> <span class="post-toc-text">软件测试活动</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="post-toc-number">11.</span> <span class="post-toc-text">软件开发过程模型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B"><span class="post-toc-number">11.1.</span> <span class="post-toc-text">瀑布模型</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%A2%9E%E9%87%8F%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B"><span class="post-toc-number">11.2.</span> <span class="post-toc-text">增量迭代模型</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%BC%94%E5%8C%96%E6%A8%A1%E5%9E%8B"><span class="post-toc-number">11.3.</span> <span class="post-toc-text">演化模型</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%9E%8B"><span class="post-toc-number">11.4.</span> <span class="post-toc-text">原型模型</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%9E%BA%E6%97%8B%E6%A8%A1%E5%9E%8B"><span class="post-toc-number">11.5.</span> <span class="post-toc-text">螺旋模型</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%95%8F%E6%8D%B7"><span class="post-toc-number">11.6.</span> <span class="post-toc-text">敏捷</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                软件工程
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Zzy</strong>
+        <span>7月 03, 2022</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAADiklEQVR42u3aSW4bQRAEQP3/0/ZVgK1RZlW3SAExJ4KcpTt4qKnl44/j0/GBAAcOHDhw4MCBAweON+b4iI/k/M/nfPX58zffLPSfM7964mwvOHDgwIHjHke+rGTzCcGeNeGLiHHgwIEDxzWOZFntmXngTO48+2O+2QsOHDhw4Hgpx1dbmmHl5+QvAThw4MCB43dxzBKn57QtSfae74YDBw4cON6To93w89I3VyXXtn8bDhw4cOD4SY52oOGdP79gvgMHDhw4cCyOTYuoTclmYw31jnDgwIEDx1GOfGhgNsTWFgQ3xb5ZcogDBw4cOM5ytGMKeYhNAmp+7f5PwoEDBw4cP8OxWVw7lDAL6nmTrF0VDhw4cOC4zdFCzEqE0fha0C6alQuLQIsDBw4cOA6Nyu0bP88b2LeaWqBvwjMOHDhw4DjKkS80unV5/o1yZDvogAMHDhw47nG0aVi7sTY0zkqQ7Rpw4MCBA8dtjrzQNkvkkq226eImzOPAgQMHjrMceRmuLfk9AyUQs6GHvOiJAwcOHDhucNQJTzmUkIfAtqi3aYzhwIEDB47bHDlBW56bDVXPQvIsHcWBAwcOHDc4ZmlVzjEr6u2Tt+iFAAcOHDhwHOXIWz6nvtkPQORJY/R0HDhw4MBxmSNZRBt0Z8G1HbkYDtjhwIEDB46jHMmC8gfk17Z3zkNyO4qBAwcOHDjucWxGGVqaPCS34w5towsHDhw4cJzlaMNnjtIO0s2I23QOBw4cOHDc5pgNN+xbVm3I3CeQxXsHDhw4cOBYcAxbNfGRFwpnxcQ8wNfvHThw4MCBY8SRh8x8yCC/wyx4b4qVOHDgwIHjtRynSnX5s/I2Uh6SceDAgQPHazlmjZw8JcsbTglx+yrwn19x4MCBA8dRjrx11IbJzRBDPpTQ/ooDBw4cOG5znBpoeN7wjfTvVIkTBw4cOHDc4EhGAdoNtyMIt0cr6uIgDhw4cOBYcORHTpM3kJJf82CfFDdx4MCBA8c9jk3AyxO8TVPqRuESBw4cOHDc5tgE100wnrWR8kAb7Q4HDhw4cFzj2LSI8hRulra1oTopLOLAgQMHjnfg2I813ChHrsqIOHDgwIHjbTiSkLYZgLjXGMOBAwcOHD/DkY8RPG9gNuKWbyy5w4FAiwMHDhw4FhztQMOs7TR7bj4q0Y7Z4cCBAweOGxwOHDhw4MCBAwcOHDhwvNnxF/bpWKnstfN9AAAAAElFTkSuQmCC">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=软件工程&url=https://zhaobaba918.github.io/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/index.html&pic=https://zhaobaba918.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=软件工程&url=https://zhaobaba918.github.io/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/index.html&via=Zzy" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaobaba918.github.io/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Zhaobaba&#39;s blog&title=软件工程&summary=&pics=https://zhaobaba918.github.io/img/favicon.png&url=https://zhaobaba918.github.io/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="需求基础"><a href="#需求基础" class="headerlink" title="需求基础"></a>需求基础</h1><p>需求工程：所有需求处理活动的总和。它收集信息、分析问题、整合观点、记录需求并验证其正确性，最终描述出软件被应⽤用后与其环境互动形成的期望效应。</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703142712800.png" alt="image-20220703142712800"></p>
+<h1 id="需求分析方法"><a href="#需求分析方法" class="headerlink" title="需求分析方法"></a>需求分析方法</h1><p>需求分析的任务：建⽴立分析模型，达成开发者和⽤户对需求信息的共同理解</p>
+<p>需求分析常见模型：</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703152120320.png" alt="image-20220703152120320"></p>
+<p><strong>面向对象分析方法的优点</strong>：</p>
+<ul>
+<li>自然性：对人而言面向对象是自然的和直观的</li>
+<li>可复用性：面向对象的分析方法更容易实现分析到设计的转化</li>
+</ul>
+<h2 id="用例图"><a href="#用例图" class="headerlink" title="用例图"></a>用例图</h2><p>面向对象的分析方法主张使用用例作为需求获取和组织的主要手段</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703163254504.png" alt="image-20220703163254504"></p>
+<h2 id="概念类图"><a href="#概念类图" class="headerlink" title="概念类图"></a>概念类图</h2><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703163704796.png" alt="image-20220703163704796"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703163915879.png" alt="image-20220703163915879"></p>
+<p>对用例描述进行名词分析法找出候选类</p>
+<p>与设计类图的不同是，概念类图只注重类的属性和关联，不注重类型、方法、可见性</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703165221243.png" alt="image-20220703165221243"></p>
+<p>和用例图的关联，从用例描述获得类，和关联</p>
+<h2 id="顺序图"><a href="#顺序图" class="headerlink" title="顺序图"></a>顺序图</h2><p>描述用例的实现，对象的交互</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703165751707.png" alt="image-20220703165751707"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703165947297.png" alt="image-20220703165947297"></p>
+<p>返回用虚线</p>
+<h2 id="状态图"><a href="#状态图" class="headerlink" title="状态图"></a>状态图</h2><p>复杂用例难以用顺序图描述，用状态图</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703170017730.png" alt="image-20220703170017730"></p>
+<h1 id="需求分析方法——需求文档化与验证"><a href="#需求分析方法——需求文档化与验证" class="headerlink" title="需求分析方法——需求文档化与验证"></a>需求分析方法——需求文档化与验证</h1><p>文档化的原因：软件开发需要分解为多个子任务分配给不同人员，人员间需要通过文档进行沟通（规范化沟通提高效率）</p>
+<p>用例文档和软件需求规格说明文档是最为常见的两种需求文档。用例文档以用户的角度，软件需求规格说明文档以软件产品的角度。</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703173126203.png" alt="image-20220703173126203"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703173149469.png" alt="image-20220703173149469"></p>
+<h2 id="评审软件需求规格说明文档"><a href="#评审软件需求规格说明文档" class="headerlink" title="评审软件需求规格说明文档"></a>评审软件需求规格说明文档</h2><p>对需求评审与验证，纠正需求开发阶段的错误</p>
+<h2 id="以需求为基础开发系统测试用例"><a href="#以需求为基础开发系统测试用例" class="headerlink" title="以需求为基础开发系统测试用例"></a>以需求为基础开发系统测试用例</h2><p>主要是功能测试</p>
+<p>为需求开发测试用例的过程中可以发现软件需求规格说明文档的缺陷与问题，也可以看做需求验证的方法</p>
+<h2 id="度量需求"><a href="#度量需求" class="headerlink" title="度量需求"></a>度量需求</h2><p>度量数据：</p>
+<ul>
+<li>用例数量</li>
+<li>平均每个用例中场景数量</li>
+<li>平均用例行数</li>
+<li>软件需求数量</li>
+<li>非功能需求数量</li>
+<li>功能点数量</li>
+</ul>
+<h1 id="软件设计基础"><a href="#软件设计基础" class="headerlink" title="软件设计基础"></a>软件设计基础</h1><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220703221837213.png" alt="image-20220703221837213"></p>
+<h1 id="软件体系结构基础"><a href="#软件体系结构基础" class="headerlink" title="软件体系结构基础"></a>软件体系结构基础</h1><p>⼀一个软件系统的体系结构规定了系统的计算部件和部件之间的交<br>互</p>
+<h2 id="体系结构风格"><a href="#体系结构风格" class="headerlink" title="体系结构风格"></a>体系结构风格</h2><ol>
+<li><p>主程序子程序</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704000107021.png" alt="image-20220704000107021"></p>
+<p>主程序是系统的控制器</p>
+<p>上层部件可以使用下层部件，下层不能使用上层</p>
+<p>子程序只能通过上层转移来获得控制权，可以在执行过程中将控制权交给下层程序，自身执行完后将控制权转给上层</p>
+<p>（主程序是main函数）</p>
+<p>优点：</p>
+<ul>
+<li>流程清晰，易于理解</li>
+<li>强控制性：单线程，容易控制正确性</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>程序调用是一种强耦合的连接方式，使系统难以修改复用</li>
+</ul>
+<p>适用于不需要修改，正确性要求高的场景（火箭发射程序）</p>
+</li>
+<li><p>面向对象风格</p>
+<p>将系统组织成若干独立的对象，每个对象<strong>封装其内部数据</strong>，并基于数据对外提供服务。（每个对象处理其自己的数据）</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704091057143-16568970587231.png" alt="image-20220704091057143"></p>
+<p>实现：主要实现机制是模块实现，它将每个对象部件实例都实现为一个模块，存在连接的对象部件实例之间会存在模块的导入导出</p>
+<p>优点：</p>
+<ul>
+<li>内部实现可修改性：高度封装，不改变接口可以改实现</li>
+<li>易开发，易理解，易复用：将系统组织成一系列平等、自治的单位。契合模块化思想</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>接口的耦合性：调用连接机制无法消除接口之间的耦合</li>
+<li>标识的耦合性</li>
+<li>副作用</li>
+</ul>
+<p>实践中基于抽象数据类型建立的软件系统大多属于面向对象式风格</p>
+</li>
+<li><p>分层</p>
+</li>
+<li><p>MVC</p>
+</li>
+</ol>
+<h1 id="软件体系结构设计与构建"><a href="#软件体系结构设计与构建" class="headerlink" title="软件体系结构设计与构建"></a>软件体系结构设计与构建</h1><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704093225586.png" alt="image-20220704093225586"></p>
+<p>体系结构设计的输入：软件需求规格说明和项目约束</p>
+<h2 id="选择体系结构风格"><a href="#选择体系结构风格" class="headerlink" title="选择体系结构风格"></a>选择体系结构风格</h2><p>比如，如果系统需要基于web开发，团队也熟悉web开发技术，那么更加偏向web应用的mvc风格就选；如果系统对实时性要求不高，但对修改性和灵活性要求比较高，企鹅用户不希望使用web技术，那么分层风格更加合适。</p>
+<p>例如，连锁酒店管理系统是典型的信息系统，MVC和分层是最常见的选择，以内开发人员不熟悉web技术，分层体系风格是最佳选择。分为展示层，业务逻辑层，数据层</p>
+<h2 id="软件体系结构逻辑设计"><a href="#软件体系结构逻辑设计" class="headerlink" title="软件体系结构逻辑设计"></a>软件体系结构逻辑设计</h2><ol>
+<li>依据概要功能需求与体系结构风格建立初始设计：</li>
+</ol>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704101003668.png" alt="image-20220704101003668"></p>
+<ol start="2">
+<li>使用非功能需求与项目约束评价和改进初始设计</li>
+</ol>
+<h2 id="软件体系结构实现"><a href="#软件体系结构实现" class="headerlink" title="软件体系结构实现"></a>软件体系结构实现</h2><p>开发包设计</p>
+<p>开发包设计考虑更多实现细节</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704104007990.png" alt="image-20220704104007990"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704104044205.png" alt="image-20220704104044205"></p>
+<h2 id="完善软件体系结构设计"><a href="#完善软件体系结构设计" class="headerlink" title="完善软件体系结构设计"></a>完善软件体系结构设计</h2><p>关键类图</p>
+<p>数据定义<img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704105130173.png" alt="image-20220704105130173"></p>
+<h2 id="添加构建接口"><a href="#添加构建接口" class="headerlink" title="添加构建接口"></a>添加构建接口</h2><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704105314384.png" alt="image-20220704105314384"></p>
+<h2 id="体系结构构建"><a href="#体系结构构建" class="headerlink" title="体系结构构建"></a>体系结构构建</h2><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704105958565.png" alt="image-20220704105958565"></p>
+<p>写代码</p>
+<h2 id="体系结构集成与测试"><a href="#体系结构集成与测试" class="headerlink" title="体系结构集成与测试"></a>体系结构集成与测试</h2><p>对于被集成起来的系统⼀一般 主要是通过其暴露出来的接⼝口,伪装⼀一定的参数和输⼊入,进⾏行⿊黑盒测试。</p>
+<h2 id="体系结构设计的文档化"><a href="#体系结构设计的文档化" class="headerlink" title="体系结构设计的文档化"></a>体系结构设计的文档化</h2><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704111027222.png" alt="image-20220704111027222"></p>
+<h2 id="体系结构评审"><a href="#体系结构评审" class="headerlink" title="体系结构评审"></a>体系结构评审</h2><h1 id="人机交互设计"><a href="#人机交互设计" class="headerlink" title="人机交互设计"></a>人机交互设计</h1><h1 id="详细设计"><a href="#详细设计" class="headerlink" title="详细设计"></a>详细设计</h1><p>体系结构设计关注高层设计，详细设计进行中低层设计</p>
+<p>详细设计的输入：需求两个文档、体系结构设计（接口）</p>
+<p>输出：详细设计类图</p>
+<h2 id="面向对象设计"><a href="#面向对象设计" class="headerlink" title="面向对象设计"></a>面向对象设计</h2><p>设计思想：职责、协作</p>
+<h2 id="面向对象设计过程"><a href="#面向对象设计过程" class="headerlink" title="面向对象设计过程"></a>面向对象设计过程</h2><ol>
+<li><p>设计模型建立</p>
+<ul>
+<li><p>通过<strong>职责</strong>建立静态设计模型</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704164815799.png" alt="image-20220704164815799"></p>
+</li>
+<li><p>通过<strong>协作</strong>建立动态设计模型</p>
+</li>
+</ul>
+</li>
+<li><p>设计模型重构</p>
+<ul>
+<li>根据模块化思想重构（高内聚低耦合）</li>
+<li>利用信息隐藏思想进行重构，隐藏职责与变更</li>
+<li>利用设计模式重构</li>
+</ul>
+</li>
+</ol>
+<h2 id="为类间协作开发集成测试用例"><a href="#为类间协作开发集成测试用例" class="headerlink" title="为类间协作开发集成测试用例"></a>为类间协作开发集成测试用例</h2><h2 id="详细设计文档描述"><a href="#详细设计文档描述" class="headerlink" title="详细设计文档描述"></a>详细设计文档描述</h2><p>体系结构设计文档强调模块及其关系</p>
+<p>详细设计文档强调模块内部的结构和行为，如类图，类接口定义，类协作，复杂数据结构定义，复杂算法逻辑描述等中低层设计</p>
+<h2 id="详细设计的评审"><a href="#详细设计的评审" class="headerlink" title="详细设计的评审"></a>详细设计的评审</h2><h1 id="软件构造"><a href="#软件构造" class="headerlink" title="软件构造"></a>软件构造</h1><p>软件构造以编程为主，还包括测试、集成等</p>
+<p>软件构造的活动包括：详细设计、编程、测试、调试、代码评审、集成与构建、构造管理</p>
+<p>实践方法：</p>
+<ul>
+<li>重构</li>
+<li>测试驱动开发：先写测试代码，开发过程中不断测试</li>
+<li>结对编程</li>
+</ul>
+<h1 id="软件测试"><a href="#软件测试" class="headerlink" title="软件测试"></a>软件测试</h1><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704195506944-16569357081832.png" alt="image-20220704195506944"></p>
+<p>软件开发中的验证与确认活动</p>
+<p><strong><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704195745846.png" alt="image-20220704195745846"></strong></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704200125405.png" alt="image-20220704200125405"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704200457311.png" alt="image-20220704200457311"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704200754999.png" alt="image-20220704200754999"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704200830444.png" alt="image-20220704200830444"></p>
+<p>黑盒测试方法</p>
+<ul>
+<li>等价类划分：将测试用例划分为几个等价的类，比如正常数据，异常数据</li>
+<li>边界值分析：对等价类划分的补充，对等价类的边界情况设计测试用例</li>
+<li>基于决策表的方法：用于测试以复杂逻辑判断为规格的测试对象</li>
+<li>状态转换</li>
+</ul>
+<p>白盒测试：</p>
+<ul>
+<li><p>语句覆盖：代码的所有语句都执行一遍；相比条件覆盖和路径覆盖是一种较弱的覆盖，不能覆盖所有路径</p>
+</li>
+<li><p>条件覆盖：保证判断中的每个条件都覆盖（true false）不保证所有路径</p>
+</li>
+<li><p>路径覆盖：保证所有路径（true false的排列）</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704205131896.png" alt="image-20220704205131896"></p>
+</li>
+</ul>
+<h2 id="软件测试活动"><a href="#软件测试活动" class="headerlink" title="软件测试活动"></a>软件测试活动</h2><ul>
+<li>测试计划</li>
+<li>测试设计</li>
+<li>测试执行</li>
+<li>测试评价</li>
+</ul>
+<h1 id="软件开发过程模型"><a href="#软件开发过程模型" class="headerlink" title="软件开发过程模型"></a>软件开发过程模型</h1><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704225033230.png" alt="image-20220704225033230"></p>
+<h2 id="瀑布模型"><a href="#瀑布模型" class="headerlink" title="瀑布模型"></a>瀑布模型</h2><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704224543955.png" alt="image-20220704224543955"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704224724638.png" alt="image-20220704224724638"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704224834400.png" alt="image-20220704224834400"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704225001006.png" alt="image-20220704225001006"></p>
+<h2 id="增量迭代模型"><a href="#增量迭代模型" class="headerlink" title="增量迭代模型"></a>增量迭代模型</h2><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704230038030.png" alt="image-20220704230038030"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704230241605.png" alt="image-20220704230241605"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704230310215.png" alt="image-20220704230310215"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704230330333.png" alt="image-20220704230330333"></p>
+<h2 id="演化模型"><a href="#演化模型" class="headerlink" title="演化模型"></a>演化模型</h2><p>适用于需求变更频繁的场景</p>
+<p>与增量不同的是软件开发人员根据用户的反馈规划后续迭代。每次迭代不是独立的，是在前导迭代的基础上实现的。加强用户反馈降低风险</p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704231421909.png" alt="image-20220704231421909"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704231437724.png" alt="image-20220704231437724"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704231533575.png" alt="image-20220704231533575"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704231548262.png" alt="image-20220704231548262"></p>
+<h2 id="原型模型"><a href="#原型模型" class="headerlink" title="原型模型"></a>原型模型</h2><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704231837493.png" alt="image-20220704231837493"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704231854565.png" alt="image-20220704231854565"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704231905204.png" alt="image-20220704231905204"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704231922340.png" alt="image-20220704231922340"></p>
+<h2 id="螺旋模型"><a href="#螺旋模型" class="headerlink" title="螺旋模型"></a>螺旋模型</h2><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704233438508.png" alt="image-20220704233438508"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704233448725.png" alt="image-20220704233448725"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704233457141.png" alt="image-20220704233457141"></p>
+<h2 id="敏捷"><a href="#敏捷" class="headerlink" title="敏捷"></a>敏捷</h2><p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704233653780.png" alt="image-20220704233653780"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704233714781.png" alt="image-20220704233714781"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704233723988.png" alt="image-20220704233723988"></p>
+<p><img src="/2022/07/03/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image-20220704233740803.png" alt="image-20220704233740803"></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2022/07/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/logo3.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Zzy's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        1951459@tongji.edu.cn
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: 1951459@tongji.edu.cn" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/07/">七月 2022<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/06/">六月 2022<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/05/">五月 2022<span class="sidebar_archives-count">16</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/04/">四月 2022<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">14</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/02/">二月 2022<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/C/">C++<span class="sidebar_archives-count">15</span></a></li><li><a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Leetcode/">Leetcode<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/OS/">OS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Recommender/">Recommender<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">卷积神经网络<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">网络编程<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%9D%A2%E7%BB%8F/">面经<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E5%8E%86/">面试经历<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">55</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+        <a href="https://weibo.com/u/3985634023" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+        <a href="https://www.instagram.com/zhaobaba918/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-instagram">
+                <span class="visuallyhidden">Instagram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/Zhaobaba918" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/435822845?spm_id_from=333.1007.0.0" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;2021&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Zhaobaba's blog
+            
+                <br>
+                
+                    欢迎来我的B站逛逛
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?lOy/ACj5suSNi7ZVFVbpFQ==", true)</script>
+    
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
